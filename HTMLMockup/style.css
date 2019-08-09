@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+input,button {
+	padding: 0;
+	border: 0;
+}
+.btn {
+	border-radius: 3rem;
+	padding: .4rem 1.2rem;
+	font-size: .8rem;
+	color: #fff;
+}
+
+/* Navigation styling    */
+nav {
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+  padding: .2rem;
+}
+
+nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+nav ul li {
+	display: inline;
+	padding: 0 .5rem 0; 
+}
+
+.heart {
+	padding: 0 1rem;
+}
+
+/* Header Styling */
+header {
+	background-image: url("images/city-scape.svg");
+	background-position: bottom;
+	background-size: cover;
+	background-color:  rgb(32, 101, 136);
+	color: #fff;
+}
+.search-div {
+	flex-grow: 2;
+	padding: .5rem;
+	align-self: flex-start;
+}
+.search-div input, .search-div button {	
+	background-color:  rgb(31, 82, 111);
+	border: 1px solid rgba(255,255,255,.3);
+}
+.search-div button img{
+	padding: .5rem;
+	width: 1rem;
+	height: 1rem;
+}
+header input {
+	padding: .5rem;
+}
+
+#npmLogo {
+	width: 5rem;
+	height: 2rem;
+	padding: .5rem .5rem 0;
+}
+#signUpBear {
+	padding: 1rem .5rem;
+}
+#bearLogo {
+	padding: .4rem .9rem;
+	margin: .5rem;
+	background-image: url("images/bear-logo.png");
+	background-size: cover;
+	background-position: center;
+}
+
+header ul li {
+	display: inline;
+}
+
+header input {
+	width: 100%;
+}
+#lower-header {
+	padding: 5rem;
+}
+
+
+#build {
+	width: 35%;
+	margin: 0 0 0 15%;
+	padding: 0 0 5rem 0;
+}
+#lower-header button {
+	background-color: rgb(240, 146, 51);
+	
+}
+
+/*CSS 4 | Collaboration Section*/
+
+#npmOrgs {
+	background: rgb(39, 53, 71);
+	color: #fff;
+	padding: 8rem;
+	justify-content: center
+		
+}
+#npmOrgs ul li {
+	padding:.5rem;
+}
+#npmOrgs button {
+	background:  rgb(203, 56, 55);
+	
+}
+#collab {
+	width: 50%;
+	padding-right: 2rem;
+}
+
+
+/* CSS 5 | What is npm */
+
+
+#aboutNpm {
+	background: url("images/forklift.svg");
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	padding: 20rem;
+	position: relative;
+}
+#npmText {
+	width: 25%;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+}
+#aboutNpm button {
+	background: rgb(49, 68, 88);
+}
+
+/*CSS6 What can you make?*/
+.callout {
+   text-align: center;
+   padding: 2rem;
+}
+.callout h1, .callout h2 , .callout h3 {
+	color:rgb(83, 88, 98);
+}
+.callout p {
+	color:rgb(135, 145, 156);
+}
+#tables p {
+	padding: 0 3rem;
+}
+.red {
+	color: rgb(208, 74, 73);
+}
+
+
+/*Declare flex items*/
+nav, header #header-row, .search-div, #npmOrgs, #tables, #tables div {
+	display: flex;
+}
+header #header-row, .search-div, #npmOrgs, #tables, #tables div {
+	justify-content: space-around;
+}
+nav {
+ justify-content: space-between;
+}
+#tables div {
+	flex-direction: column;
+}
+
